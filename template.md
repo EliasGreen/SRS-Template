@@ -1,12 +1,12 @@
-# Software Requirements Specification
-## For <project name>
+# Спецификация требований к программному обеспечению
+## Для проекта "GyGym"
 
-Version 0.1  
-Prepared by <author>  
-<organization>  
-<date created>  
+Версия 0.1  
+Подготовлен Фурсой И. И.
+КубГУ ФКТиПМ 36/1 
+26.03.2021  
 
-Table of Contents
+Таблица контента
 =================
 * [Revision History](#revision-history)
 * 1 [Introduction](#1-introduction)

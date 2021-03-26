@@ -9,68 +9,68 @@
 Таблица контента
 =================
 * [Лист регистраций изменений](#лист-регистраций-изменений)
-* 1 [Introduction](#1-introduction)
-  * 1.1 [Document Purpose](#11-document-purpose)
-  * 1.2 [Product Scope](#12-product-scope)
-  * 1.3 [Definitions, Acronyms and Abbreviations](#13-definitions-acronyms-and-abbreviations)
-  * 1.4 [References](#14-references)
-  * 1.5 [Document Overview](#15-document-overview)
-* 2 [Product Overview](#2-product-overview)
-  * 2.1 [Product Perspective](#21-product-perspective)
-  * 2.2 [Product Functions](#22-product-functions)
-  * 2.3 [Product Constraints](#23-product-constraints)
-  * 2.4 [User Characteristics](#24-user-characteristics)
-  * 2.5 [Assumptions and Dependencies](#25-assumptions-and-dependencies)
-  * 2.6 [Apportioning of Requirements](#26-apportioning-of-requirements)
-* 3 [Requirements](#3-requirements)
-  * 3.1 [External Interfaces](#31-external-interfaces)
-    * 3.1.1 [User Interfaces](#311-user-interfaces)
-    * 3.1.2 [Hardware Interfaces](#312-hardware-interfaces)
-    * 3.1.3 [Software Interfaces](#313-software-interfaces)
-  * 3.2 [Functional](#32-functional)
-  * 3.3 [Quality of Service](#33-quality-of-service)
-    * 3.3.1 [Performance](#331-performance)
-    * 3.3.2 [Security](#332-security)
-    * 3.3.3 [Reliability](#333-reliability)
-    * 3.3.4 [Availability](#334-availability)
-  * 3.4 [Compliance](#34-compliance)
-  * 3.5 [Design and Implementation](#35-design-and-implementation)
-    * 3.5.1 [Installation](#351-installation)
-    * 3.5.2 [Distribution](#352-distribution)
-    * 3.5.3 [Maintainability](#353-maintainability)
-    * 3.5.4 [Reusability](#354-reusability)
-    * 3.5.5 [Portability](#355-portability)
-    * 3.5.6 [Cost](#356-cost)
-    * 3.5.7 [Deadline](#357-deadline)
-    * 3.5.8 [Proof of Concept](#358-proof-of-concept)
-* 4 [Verification](#4-verification)
-* 5 [Appendixes](#5-appendixes)
+* 1 [Вступление](#1-вступление)
+  * 1.1 [Цель документа](#11-цель-документа)
+  * 1.2 [Область продукта](#12-область-продукта)
+  * 1.3 [Определения, акронимы и сокращения](#13-определения-акронимы-и-сокращения)
+  * 1.4 [Использованные источники](#14-использованные-источники)
+  * 1.5 [Обзор документа](#15-обзор-документа)
+* 2 [Обзор документа](#2-обзор-документа)
+  * 2.1 [Перспектива продукта](#21-перспектива-продукта)
+  * 2.2 [Функции продукта](#22-функции-продукта)
+  * 2.3 [Ограничения продукта](#23-ограничения-продукта)
+  * 2.4 [Характеристики пользователя](#24-характеристики-пользователя)
+  * 2.5 [Предположения и зависимости](#25-предположения-и-зависимости)
+  * 2.6 [Распределение требований](#26-распределение-требований)
+* 3 [Требования](#3-требования)
+  * 3.1 [Внешние интерфейсы](#31-внешние-интерфейсы)
+    * 3.1.1 [Интерфейсы пользователя](#311-интерфейсы-пользователя)
+    * 3.1.2 [Аппаратные интерфейсы](#312-аппаратные-интерфейсы)
+    * 3.1.3 [Программные интерфейсы](#313-программные-интерфейсы)
+  * 3.2 [Функциональные](#32-функциональные)
+  * 3.3 [Качество обслуживания](#33-качество-обслуживания)
+    * 3.3.1 [Производительность](#331-производительность)
+    * 3.3.2 [Безопасность](#332-безопасность)
+    * 3.3.3 [Надежность](#333-надежность)
+    * 3.3.4 [Доступность](#334-доступность)
+  * 3.4 [Гибкость](#34-гибкость)
+  * 3.5 [Дизайн и реализация](#35-дизайн-и-реализация)
+    * 3.5.1 [Инсталяция](#351-инсталяция)
+    * 3.5.2 [Дистрибуция](#352-дистрибуция)
+    * 3.5.3 [Ремонтопригодность](#353-ремонтопригодность)
+    * 3.5.4 [Возможность повторного использования](#354-возможность-повторного-использования)
+    * 3.5.5 [Портативность](#355-портативность)
+    * 3.5.6 [Расходы](#356-расходы)
+    * 3.5.7 [Сроки выполнения](#357-сроки-выполнения)
+    * 3.5.8 [Доказательство концепции](#358-доказательство-концепции)
+* 4 [Верификация](#4-верификация)
+* 5 [Приложения](#5-приложения)
 
 ## Лист регистраций изменений
-| Name | Date    | Reason For Changes  | Version   |
-| ---- | ------- | ------------------- | --------- |
-|      |         |                     |           |
-|      |         |                     |           |
-|      |         |                     |           |
+| Название | Дата    | Причина             | Версия    |
+| -------- | ------- | ------------------- | --------- |
+|          |         |                     |           |
+|          |         |                     |           |
+|          |         |                     |           |
 
-## 1. Introduction
+## 1. Вступление
 > This section should provide an overview of the entire document
 
-### 1.1 Document Purpose
+### 1.1 Цель документа
 Describe the purpose of the SRS and its intended audience.
 
-### 1.2 Product Scope
+### 1.2 Область продукта
 Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
 
-### 1.3 Definitions, Acronyms and Abbreviations
+### 1.3 Определения, акронимы и сокращения
 
-### 1.4 References
+### 1.4 Использованные источники
 List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
 
-### 1.5 Document Overview
+### 1.5 Обзор документа
 Describe what the rest of the document contains and how it is organized.
 
-## 2. Product Overview
+## 2. Обзор документа
 > This section should describe the general factors that affect the product and its requirements. This section does not state specific requirements. Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand.
 
 ### 2.1 Product Perspective

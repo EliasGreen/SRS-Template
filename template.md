@@ -60,17 +60,12 @@
 
 ### 1.2 Назначение ПО
 Назначение информационной системы "GyGym": автоматизация бизнес-процессов фитнес-клуба.
-
 Содержание продукта: клиент-серверное веб-приложение. 
-* Решаемые задачи:
-  * Организация подсистемы идентификации, аутентификации и авторизации пользователей, которая служит для контроля доступа пользователей приложения к тем или иным данным и функциям.
-  * Организация подсистемы управления, которая служит для реализации функций директора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса директора.
-  * Организация подсистемы администрирования, которая служит для реализации функций администратора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса администратора.
-  * Организация подсистемы бухгалтерии, которая служит для реализации функций бухгалтера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса бухгалтера.
-  * Организация подсистемы менеджмента, которая служит для реализации функций менеджера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса менеджера.
 
 ### 1.3 Определения, акронимы и сокращения
 - ПО: программное обеспечение
+- ЯП: язык программирования
+- ОС: операционная система
 - Информационная система: система, предназначенная для хранения, поиска и обработки информации, и соответствующие организационные ресурсы (человеческие, технические, финансовые и т. д.), которые обеспечивают и распространяют информацию
 
 ### 1.4 Использованные источники
@@ -82,32 +77,43 @@
 Далее в документе идет общий обзор продукта, затем располагается блок с описанием требований к информационной системе, а после - описание механизма верификации разработанной системы и список приложений к документу, содержащий те или иные материалы, использованные при анализе и проектировании системы в целом.
 
 ## 2. Обзор продукта
-> This section should describe the general factors that affect the product and its requirements. This section does not state specific requirements. Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand.
 
 ### 2.1 Перспектива продукта
-Describe the context and origin of the product being specified in this SRS. For example, state whether this product is a follow-on member of a product family, a replacement for certain existing systems, or a new, self-contained product. If the SRS defines a component of a larger system, relate the requirements of the larger system to the functionality of this software and identify interfaces between the two. A simple diagram that shows the major components of the overall system, subsystem interconnections, and external interfaces can be helpful.
+Информационная система является новым автономным продуктом, который призван обеспечить автоматизацию внутренних бизнес-процессов компании, путем взаимодействия как со стандартными уже используемым ранее в работе ПО (Microsoft Excel 2013, Microsoft Word 2010 и т. п.), так и с физическим оборудованием (принтерами, сканерами и т.п.).
 
 ### 2.2 Функции продукта
-Summarize the major functions the product must perform or must let the user perform. Details will be provided in Section 3, so only a high level summary (such as a bullet list) is needed here. Organize the functions to make them understandable to any reader of the SRS. A picture of the major groups of related requirements and how they relate, such as a top level data flow diagram or object class diagram, is often effective.
+* Основные функции:
+  * Организация подсистемы идентификации, аутентификации и авторизации пользователей, которая служит для контроля доступа пользователей приложения к тем или иным данным и функциям.
+  * Организация подсистемы управления, которая служит для реализации функций директора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса директора.
+  * Организация подсистемы администрирования, которая служит для реализации функций администратора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса администратора.
+  * Организация подсистемы бухгалтерии, которая служит для реализации функций бухгалтера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса бухгалтера.
+  * Организация подсистемы менеджмента, которая служит для реализации функций менеджера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса менеджера.
 
 ### 2.3 Ограничения продукта
-This subsection should provide a general description of any other items that will limit the developer’s options. These may include:  
-
-* Interfaces to users, other applications or hardware.  
-* Quality of service constraints.  
-* Standards compliance.  
-* Constraints around design or implementation.
+- Поддержка стандартного пакета Microsoft Office
+- Возможность работы с принтерами Asus SX-2013
+- Возможность администрирования базы данных системным адмнистратором сети
+- Реализация интуитивно понятного интерфейса согласно составленным макетам приложения
+- Использование ЯП Python 3 и Javascript в купе с архитектурным паттерном MVC
 
 ### 2.4 Характеристики пользователя
-Identify the various user classes that you anticipate will use this product. User classes may be differentiated based on frequency of use, subset of product functions used, technical expertise, security or privilege levels, educational level, or experience. Describe the pertinent characteristics of each user class. Certain requirements may pertain only to certain user classes. Distinguish the most important user classes for this product from those who are less important to satisfy.
+Минимальные требования для пользователя системы: базовая компьютерная грамотность и владение пакетом Microsoft Excel на начальном уровне.
+
+* Классы пользователей
+  - Директор: владелец бизнеса
+  - Администратор: администратор того или иного фитнес-центра
+  - Бухгалтер: бухгалтер компании
+  - Менедежер: сотрудник по работе с менеджментом процессов компании
+
+Каждый класс пользователь использует свой интерфейс взаимодействия с программой.
 
 ### 2.5 Предположения и зависимости
-List any assumed factors (as opposed to known facts) that could affect the requirements stated in the SRS. These could include third-party or commercial components that you plan to use, issues around the development or operating environment, or constraints. The project could be affected if these assumptions are incorrect, are not shared, or change. Also identify any dependencies the project has on external factors, such as software components that you intend to reuse from another project, unless they are already documented elsewhere (for example, in the vision and scope document or the project plan).
+* Стандартный пакет Microsoft Office
+* Принтеры и сканеры фирмы ASUS
+* ОС Macintosh
 
 ### 2.6 Распределение требований
-Apportion the software requirements to software elements. For requirements that will require implementation over multiple software elements, or when allocation to a software element is initially undefined, this should be so stated. A cross reference table by function and software element should be used to summarize the apportioning.
-
-Identify requirements that may be delayed until future versions of the system (e.g., blocks and/or increments).
+Требования выполняются согласно порядку, указанному в [таблице 1](#)
 
 ## 3. Требования
 > This section specifies the software product's requirements. Specify all of the software requirements to a level of detail sufficient to enable designers to design a software system to satisfy those requirements, and to enable testers to test that the software system satisfies those requirements.

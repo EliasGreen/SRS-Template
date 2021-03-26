@@ -11,11 +11,11 @@
 * [Лист регистраций изменений](#лист-регистраций-изменений)
 * 1 [Вступление](#1-вступление)
   * 1.1 [Цель документа](#11-цель-документа)
-  * 1.2 [Область продукта](#12-область-продукта)
+  * 1.2 [Назначение ПО](#12-назначение-по)
   * 1.3 [Определения, акронимы и сокращения](#13-определения-акронимы-и-сокращения)
   * 1.4 [Использованные источники](#14-использованные-источники)
   * 1.5 [Обзор документа](#15-обзор-документа)
-* 2 [Обзор документа](#2-обзор-документа)
+* 2 [Обзор продукта](#2-обзор-продукта)
   * 2.1 [Перспектива продукта](#21-перспектива-продукта)
   * 2.2 [Функции продукта](#22-функции-продукта)
   * 2.3 [Ограничения продукта](#23-ограничения-продукта)
@@ -54,23 +54,33 @@
 |          |         |                     |           |
 
 ## 1. Вступление
-> This section should provide an overview of the entire document
 
 ### 1.1 Цель документа
-Describe the purpose of the SRS and its intended audience.
+Целью данного документа является описание информационной системы "GyGym" для её разработчиков.
 
-### 1.2 Область продукта
-Identify the product whose software requirements are specified in this document, including the revision or release number. Explain what the product that is covered by this SRS will do, particularly if this SRS describes only part of the system or a single subsystem. Provide a short description of the software being specified and its purpose, including relevant benefits, objectives, and goals. Relate the software to corporate goals or business strategies. If a separate vision and scope document is available, refer to it rather than duplicating its contents here.
+### 1.2 Назначение ПО
+Назначение информационной системы "GyGym": автоматизация бизнес-процессов фитнес-клуба.
+Содержание продукта: клиент-серверное веб-приложение. 
+* Решаемые задачи:
+ * Организация подсистемы идентификации, аутентификации и авторизации пользователей, которая служит для контроля доступа пользователей приложения к тем или иным данным и функциям.
+ * Организация подсистемы управления, которая служит для реализации функций директора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса директора.
+ * Организация подсистемы администрирования, которая служит для реализации функций администратора, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса администратора.
+ * Организация подсистемы бухгалтерии, которая служит для реализации функций бухгалтера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса бухгалтера.
+ * Организация подсистемы менеджмента, которая служит для реализации функций менеджера, выполняет обслуживание функционала, продемонстрированного в прототипе интерфейса менеджера.
 
 ### 1.3 Определения, акронимы и сокращения
+- ПО: программное обеспечение
+- Информационная система: система, предназначенная для хранения, поиска и обработки информации, и соответствующие организационные ресурсы (человеческие, технические, финансовые и т. д.), которые обеспечивают и распространяют информацию
 
 ### 1.4 Использованные источники
-List any other documents or Web addresses to which this SRS refers. These may include user interface style guides, contracts, standards, system requirements specifications, use case documents, or a vision and scope document. Provide enough information so that the reader could access a copy of each reference, including title, author, version number, date, and source or location.
+- [Законодательство Российской Федерации]
+- [Стандарт IEEE 29148-2011]
+- [Внутренний регламент компании]
 
 ### 1.5 Обзор документа
-Describe what the rest of the document contains and how it is organized.
+Далее в документе идет общий обзор продукта, затем располагается блок с описанием требований к информационной системе, а после - описание механизма верификации разработанной системы и список приложений к документу, содержащий те или иные материалы, использовании при анализе и проектировании системы в целом.
 
-## 2. Обзор документа
+## 2. Обзор продукта
 > This section should describe the general factors that affect the product and its requirements. This section does not state specific requirements. Instead, it provides a background for those requirements, which are defined in detail in Section 3, and makes them easier to understand.
 
 ### 2.1 Перспектива продукта

@@ -171,13 +171,9 @@
 Посредством СУБД Oracle должна быть реализована сериализация данных путем создания checkpoint'ов каждый день в 21:00 по МСК.
 
 ### 3.4 Гибкость
-Specify the requirements derived from existing standards or regulations, including:  
-* Report format
-* Data naming
-* Accounting procedures
-* Audit tracing
-
-For example, this could specify the requirement for software to trace processing activity. Such traces are needed for some applications to meet minimum regulatory or financial standards. An audit trace requirement may, for example, state that all changes to a payroll database shall be recorded in a trace file with before and after values.
+- Отслеживание аудита осуществлется посредством ПО Excel 2013
+- Существует полугодовой отчет, составляемый бухгалтерией по стандарту [ПС-2124](#) от 04.05.2010
+- Формат любого бухгалтерского отчета регламентируется стандартом [ЦС-543](#) от 11.10.2015
 
 ### 3.5 Дизайн и реализация
 

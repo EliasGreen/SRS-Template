@@ -205,12 +205,22 @@
 - 30.07.2021 - релиз
  
 #### 3.5.8 Доказательство концепции
-<!-- TODO: come up with a description -->
+[Прототип программы](#)
 
 ## 4. Верификация
-> This section provides the verification approaches and methods planned to qualify the software. The information items for verification are recommended to be given in a parallel manner with the requirement items in Section 3. The purpose of the verification process is to provide objective evidence that a system or system element fulfills its specified requirements and characteristics.
+### Тестирование клиентско-серверной части:
+- 1. При вводе неверного пароля в ходе авторизации пользователь видит сообщение "Неверный логин или пароль"
+- 2. etc
 
-<!-- TODO: give more guidance, similar to section 3 -->
-<!-- ieee 15288:2015 -->
+### Тестирование серверной части:
+- 1. todo
+- 2. etc
+
+### Тестирование клиентской части:
+- 1. todo
+- 2. etc
 
 ## 5. Приложения
+- [Диаграмма вариантов использования](#)
+- [Прототип интерфейса](#)
+- [IDEF0 диаграммы информационной системы](#)

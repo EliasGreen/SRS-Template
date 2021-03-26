@@ -178,26 +178,32 @@
 ### 3.5 Дизайн и реализация
 
 #### 3.5.1 Инсталяция
-Constraints to ensure that the software-to-be will run smoothly on the target implementation platform.
+Инсталяция осуществляется специально обученным человеком с помощью заранее загруженного дистрибутива при отключенном антивирусном обеспечении компьютера.
+При этом во время инсталяции компьютер не должен быть параллельно использован для решения тех или иных задач. Также следует заранее отключить устройство от локальной сети, если к таковой оно было подключено.
 
 #### 3.5.2 Дистрибуция
-Constraints on software components to fit the geographically distributed structure of the host organization, the distribution of data to be processed, or the distribution of devices to be controlled.
+Распространение программы осуществляется посредством копий, размещенных на жестких носителях.
 
 #### 3.5.3 Ремонтопригодность
-Specify attributes of software that relate to the ease of maintenance of the software itself. These may include requirements for certain modularity, interfaces, or complexity limitation. Requirements should not be placed here just because they are thought to be good design practices.
+Информационная система состоит клиентской и серверной частей.
 
 #### 3.5.4 Возможность повторного использования
-<!-- TODO: come up with a description -->
+Клиентская часть системы может быть копировано неограниченное количество раз и работать параллельно каждое независимо друг от друга.
+Серверная часть является единой неделимой программой.
 
 #### 3.5.5 Портативность
-Specify attributes of software that relate to the ease of porting the software to other host machines and/or operating systems.
+Портативность клиентской части обеспечивается за счет независимости копий друг от друга.
 
 #### 3.5.6 Расходы
-Specify monetary cost of the software product.
+Общий бюджет: 2.500.000 российских рублей
+
+Из общего бюджета может быть потрачено на клиентскую часть не более 50-ти процентов.
 
 #### 3.5.7 Сроки выполнения
-Specify schedule for delivery of the software product.
-
+- 30.04.2021 - MVP
+- 30.06.2021 - предрелизная версия
+- 30.07.2021 - релиз
+ 
 #### 3.5.8 Доказательство концепции
 <!-- TODO: come up with a description -->
 

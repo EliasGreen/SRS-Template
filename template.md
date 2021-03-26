@@ -8,7 +8,7 @@
 
 Таблица контента
 =================
-* [Revision History](#revision-history)
+* [Лист регистраций изменений](#лист-регистраций-изменений)
 * 1 [Introduction](#1-introduction)
   * 1.1 [Document Purpose](#11-document-purpose)
   * 1.2 [Product Scope](#12-product-scope)
@@ -46,7 +46,7 @@
 * 4 [Verification](#4-verification)
 * 5 [Appendixes](#5-appendixes)
 
-## Revision History
+## Лист регистраций изменений
 | Name | Date    | Reason For Changes  | Version   |
 | ---- | ------- | ------------------- | --------- |
 |      |         |                     |           |
